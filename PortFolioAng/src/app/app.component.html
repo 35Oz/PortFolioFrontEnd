@@ -1,0 +1,44 @@
+
+   <router-outlet></router-outlet> 
+    <!-- MENU ENCABEZADO -->
+
+    <div class="contenedor-header">
+      <header>
+          <div class="logo">
+              <a routerLink="/inicio">Arg programa - MyPF</a>
+          </div>
+          <nav id="nav" class="responsive">
+              <ul>
+                  <li><a routerLink="/inicio" >INICIO</a></li>
+                  <li><a routerLink="/sobre-mi" >SOBRE MI</a></li>
+                  <li><a routerLink="/curriculum" >CURRICULUM</a></li>
+                  <li><a routerLink="/skills" >HABILIDADES</a></li>
+                  <li><a routerLink="/proyectos" >PROYECTOS</a></li>
+              </ul>
+          </nav>
+          <nav id="navRedes">
+              <ul>
+                  
+                  <li><a href="https://www.linkedin.com/in/ezequiel-díaz-7bb7a9171/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>                  
+                  <li><a href="https://www.discordapp.com/users/Elese#0236" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+                  <li><a href="https://www.instagram.com/eze_diaz17/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                  <button type="button" (click)="login()"   *ngIf="!isLogged">INGRESO</button>
+                  <button type="button" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+              </ul>
+          </nav>
+          <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+      </header>
+    
+   
+   </div> 
+  
+  
+      <!-- footer -->
+      <footer>
+          <a href="#inicio">
+              <i class=></i>
+          </a>
+          
+      </footer>

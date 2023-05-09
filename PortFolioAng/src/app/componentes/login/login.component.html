@@ -1,0 +1,36 @@
+
+
+<section id="login" class="login">
+    <div class="form-valores">
+        <form  #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+           
+
+            <div class="valor">
+                <i class="fa-regular fa-envelope" ></i>
+                <input type="text"  id="nombreUsuario" name="nombreUsuario" 
+                [(ngModel)]="nombreUsuario" [ngModelOptions]="{standalone: true}" required>
+                <label for="nombreUsuario">Usuario</label>
+            </div>
+
+
+            <div class="valor">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password"  id="password"  [(ngModel)]="password" [ngModelOptions]="{standalone: true}" required>
+                <label for="password">Contraseña</label>
+               
+            </div>
+
+            <div class="onEnviar">
+                <button type="submit" (click)="onLogin()">Enviar</button>
+            </div>
+
+            <div class="registrar">
+                <p>No tenes cuenta? <a href="#">Registrate</a></p>
+            </div>
+                
+        </form>
+    </div>
+
+
+</section>
+

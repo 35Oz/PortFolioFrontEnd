@@ -1,0 +1,130 @@
+{
+    
+    "name": "EZEQUIEL DIAZ",
+    "posicion":"Desarrollador Web - Full Stack",
+    "perfil": "assets/img/perfil.png",
+
+
+
+
+
+
+
+    "datos":[{
+            "dato":"Teléfono",
+            "info":"011-33660137"
+        },
+        {
+            "dato":"email",
+            "info":"ezediaz_00@hotmail.com"
+        },
+        {
+            "dato":"ubicacion",
+            "info":"Buenos Aires, Argentina"
+        }],
+
+    "intereses":[{
+            "logo": "fa-solid fa-gamepad",
+            "intNombre": "JUEGOS"
+        },
+        {
+            "logo": "fa-solid fa-headphones",
+            "intNombre": "MUSICA"
+        },
+        {
+            "logo":"fa-solid fa-dumbbell",
+            "intNombre":"GIMNASIO"
+        }],
+
+
+
+
+
+    "lenguajes":[{
+        "bar":"bar",
+        "lenguaje":"HTML",
+        "porLenguaje":"html"
+    },
+    {
+        "bar":"bar",
+        "lenguaje":"CSS",
+        "porLenguaje":"css"
+    },
+    {
+        "bar":"bar",
+        "lenguaje":"JAVASCRIPT",
+        "porLenguaje":"javascript"
+    }],
+
+    "habilidades":[{
+        "bar1":"bar1",
+        "habilidad":"CREATIVIDAD",
+        "porHabilidad":"creatividad"
+    },
+    {
+        "bar1":"bar1",
+        "habilidad":"TRABAJO EN EQUIPO",
+        "porHabilidad":"trabajoenequipo"
+    },
+    {
+        "bar1":"bar1",
+        "habilidad":"CARISMA",
+        "porHabilidad":"carisma"
+    }],
+
+
+
+
+    
+
+    "estudio":[{
+            "especialidad": "Bachiller en Humanidades",
+            "institucion": "Instituto Cristo Rey",
+            "fecha":"2011 - 2017"
+            
+        },
+        {
+            "especialidad": "Licenciatura en Sistemas",
+            "institucion": "Universidad de General Sarmiento",
+            "fecha":"2020 - Actualidad"
+        
+        },
+        {
+            "especialidad": "Masajista Especializado",
+            "institucion": "Academia DayloPlas",
+            "fecha":"2020 - 2020"
+            
+        },
+        {
+            "especialidad": "Masoterapia",
+            "institucion": "Academia DayloPlas",
+            "fecha": "2021 - 2021"
+            
+        },
+        {
+            "especialidad": "Full Stack Developer",
+            "institucion": "Argentina Programa",
+            "fecha": "2022 - Actualidad"
+            
+        }],
+        
+    "trabajo":[{
+            "puesto": "Servicio de Catering",
+            "lugar": "Jano´s Eventos",
+            "fecha": "2017 - 2018"
+
+        },
+        {
+            "puesto": "Atención al Cliente",
+            "lugar": "ViaSano Salud",
+            "fecha": "2019 - 2020"
+
+        },
+        {
+            "puesto": "Masoterapeuta",
+            "lugar": "Taurus",
+            "fecha": "2021 - Actualidad"
+
+        }]
+
+}
