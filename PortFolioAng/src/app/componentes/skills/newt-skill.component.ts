@@ -5,8 +5,8 @@ import { SkillService } from 'src/app/service/skill.service';
 
 @Component({
   selector: 'app-newt-skill',
-  templateUrl: './newt-skill.component.html',
-  styleUrls: ['./newt-skill.component.css']
+  templateUrl: './new-skill.component.html',
+  styleUrls: ['./new-skill.component.css']
 })
 export class NewtSkillComponent implements OnInit{
   nombre: string;
@@ -22,7 +22,6 @@ export class NewtSkillComponent implements OnInit{
    const skill = new Skill(this.nombre, this.porcentaje);
    this.skillS.save(skill).subscribe(
     data => {
-      alert("Skill creada correctamente");
       this.router.navigate(['/skills'])
     }, err =>{
       alert("Fallo al añadir la skill");

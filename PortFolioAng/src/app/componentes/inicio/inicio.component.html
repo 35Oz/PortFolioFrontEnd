@@ -1,10 +1,50 @@
    <!-- SECCION INICIO -->
 <section id="inicio" class="inicio">
     <div class="contenido-banner">
-        <div class="contenedor-img">
+        <div class="contenedor-img">   
           <img src= "assets/img/perfil.png">
         </div>
-        <h1>{{persona?.nombre}} {{persona?.apellido}} </h1>
-        <h2>Desarrollador Web - Full Stack</h2>
+        <h1> {{persona.nombre}} </h1>
+        <h2>{{persona.apellido}}</h2>
+        <button type="button" class="editar" routerLink="/editacercade/1" *ngIf="isLogged">
+            <i class="fa-solid fa-pencil"></i>
+        </button>
     </div>
+    <!-- SECCION SOBRE MI -->
+<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+<section id="sobremi" class="sobremi">
+ <div class="contenido-seccion">
+     <h2>Sobre Mí</h2>
+    <div class="contenedor-info">
+     <div>
+         <p>{{persona.descripcion}}</p>
+     </div>
+    </div>  
+
+     <div class="fila">
+         <!-- datos personales -->
+         
+         <div class="col">
+             <h3>Datos Personales</h3>
+                        <div class="info">
+                            <strong>Email</strong>
+                            {{persona.email}}
+                        </div>
+                        <div class="info">
+                            <strong>Telefono</strong>
+                            {{persona.telefono}}
+                        </div>
+                        <div class="info">
+                            <strong>Ubicacion</strong>
+                            {{persona.ubicacion}}
+                        </div>
+                  
+         </div>
+
+      
+     </div>
+       
+ </div>
+</section>
+    
 </section>

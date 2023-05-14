@@ -1,0 +1,40 @@
+<section class="container1">
+    <div class="form-valores">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" >
+            <div class="valor">
+                <input type="text" class="form-control"  id="nombreUsuario" name="nombre" [(ngModel)]="persona.nombre" required>
+                <label for="nombreUsuario">Nombre completo</label>
+            </div>
+            <div class="valor">
+                <input type="text" class="form-control" id="password"  name="apellido"[(ngModel)]="persona.apellido" required >
+                <label for="password">Puesto laboral</label>
+            </div>
+            <div class="valor">
+                <input type="text"  id="password" class="form-control" name="descripcion" [(ngModel)]="persona.descripcion" required>
+                <label for="password">Acerca de vos</label>
+            </div>
+            <div class="valor">
+
+                <input type="file" id="password" class="form-control"name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)">
+                <label for="password">Foto de perfil</label>
+            </div>
+            <div class="valor">
+                <input type="email"  id="password" class="form-control" name="email" [(ngModel)]="persona.email" required>
+                <label for="password">email</label>
+            </div>
+            <div class="valor">
+                <input type="number"  id="password" class="form-control" name="telefono" [(ngModel)]="persona.telefono" required>
+                <label for="password">telefono</label>
+            </div>
+            <div class="valor">
+                <input type="text"  id="password" class="form-control" name="ubicacion" [(ngModel)]="persona.ubicacion" required>
+                <label for="password">ubicacion (País, Ciudad)</label>
+            </div>
+            <div class="onEnviar">
+                <button >Editar persona</button>
+            </div>     
+        </form>
+    </div>
+
+
+</section>

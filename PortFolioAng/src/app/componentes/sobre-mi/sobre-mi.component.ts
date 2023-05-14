@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PorfolioService } from 'src/app/service/porfolio.service';
+
 
 @Component({
   selector: 'app-sobre-mi',
@@ -9,21 +9,8 @@ import { PorfolioService } from 'src/app/service/porfolio.service';
 })
 export class SobreMiComponent implements OnInit{
 
+  ngOnInit(): void {}
 
-
-  interesesList:any;
-  datosList:any;
-  constructor( private datosPorfolio:PorfolioService){ }
-
-  ngOnInit(): void {
-
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      this.datosList = data.datos; 
-  })
-  this.datosPorfolio.obtenerDatos().subscribe(data =>{
-    this.interesesList = data.intereses; 
-  })
-  }
 
 
 }

@@ -2,19 +2,16 @@
 <section id="curriculum" class="curriculum">
     <div class="contenido-seccion">
         <h2>Curriculum</h2>
-
-
-
-
         <div class="fila">
             <div class="col izquierda">
-                <h3>Educación</h3>
+                <h3 >Educación</h3>
                 <button type="button" class="buttonIzq" routerLink="/nuevaedu" *ngIf="isLogged">
                     Nueva Educacion
                 </button>
                 <div class="item der" *ngFor="let Educacion of educacion">
                     <h4>{{Educacion.nombreE}}</h4>
                     <span class="lugar">{{Educacion.descripcionE}}</span>
+                    <br>
                     <div class="contenedor-botones">
                         <button class="editar" *ngIf="isLogged" type="button" routerLink="/editedu/{{Educacion.id}}">
                             <i class="fa-solid fa-pencil"></i></button>
@@ -30,14 +27,14 @@
 
 
             <div class="col derecha">
-                <h3>Experiencia de trabajo</h3>
+                <h3 >Experiencia de trabajo</h3>
                 <button type="button" class="buttonDer" routerLink="/nuevaexp" *ngIf="isLogged">
                      Nueva Experiencia
                 </button>
                 <div class="item der" *ngFor="let Experiencia of expe">
                     <h4>{{Experiencia.nombreE}}</h4>
-
                     <span class="lugar">{{Experiencia.descripcionE}}</span>
+                    <br>
                     <div class="contenedor-botones">
                         <button class="editar" *ngIf="isLogged" type="button" routerLink="/editexp/{{Experiencia.id}}">
                             <i class="fa-solid fa-pencil"></i></button>

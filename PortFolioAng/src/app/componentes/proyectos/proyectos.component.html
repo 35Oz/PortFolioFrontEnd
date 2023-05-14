@@ -1,12 +1,23 @@
-    <!-- SECCION PROYECTOS -->
+   <!-- SECCION PROYECTOS -->
     <section id="proyectos" class="proyectos" >
         <div class="contenido-proyectos">
             <h2>Proyectos</h2>
+            <button class="nuevo"
+            routerLink="/nuevoPro" > + </button>
             <div class="pro">
                 <div class="pro1">
-                    <h2>Argentina Programa-MyPf</h2>
+                    <h2>Proyecto 1</h2>
                     <img src="assets/img/proyecto1.png">
-                    
+                     <!-- AGREGAR *ngIf="isLogged" (click)="delete(Experiencia.id)"  -->   
+                    <button class="borrar" type="button" >
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                    <h2>PROYECTO 2</h2>
+                    <img src="assets/img/proyecto1.png">
+                     <!-- AGREGAR *ngIf="isLogged" (click)="delete(Experiencia.id)"  -->   
+                    <button class="borrar" type="button" >
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,45 +1,37 @@
    <!-- SECCION SKILLS -->
    <section id="skills" class="skills" >
+    <h2>HARD & SOFT SKILLS </h2>
     <div class="contenido-skills">
-        <h2>HARD & SOFT SKILLS </h2>
-        <div>
-            <button type="button" routerLink="/newskill" class="button" *ngIf="isLogged"></button>
-        </div>
+            <button type="button" routerLink="/newskill" class="buton" *ngIf="isLogged">Nueva Skill</button>
+            <div class="contenedor-boton">
+                <div class="circulos" *ngFor="let skill of skill">
+                    <circle-progress 
+                    [percent]="(skill.porcentaje)" 
+                    [radius]="90" [imageSrc]="''" 
+                    [title]="(skill.nombre)"
+                    [titleColor]="'#FFF'"
+                    [showTitle]="true" 
+                    [showImage]="false" 
+                    [imageHeight]="70" 
+                    [imageWidth]="70" 
+                    [showUnits]="false"
+                    [showSubtitle]="false" 
+                    [outerStrokeWidth]="16" 
+                    [innerStrokeWidth]="2" 
+                    [outerStrokeColor]="'#1CB698'"
+                    [innerStrokeColor]="'#FFF'" 
+                    [animation]="true" 
+                    [animationDuration]="600">
+                </circle-progress>
 
-        <div class="fila">
-                <div class="filai">
-                    <div class="lenguajes" *ngFor="let skill of skill">
-                        <circle-progress 
-                        [percent]="(skill.porcentaje)" 
-                        [radius]="90" [imageSrc]="''" 
-                        [title]="(skill.nombre)"
-                        [titleColor]="'#212F3C'"
-                        [showTitle]="true" 
-                        [showImage]="false" 
-                        [imageHeight]="70" 
-                        [imageWidth]="70" 
-                        [showUnits]="false"
-                        [showSubtitle]="false" 
-                        [outerStrokeWidth]="16" 
-                        [innerStrokeWidth]="2" 
-                        [outerStrokeColor]="'#78C000'"
-                        [innerStrokeColor]="'#C7E596'" 
-                        [animation]="true" 
-                        [animationDuration]="600">
-                        </circle-progress>
-
-                        <div class="contenedor-botones">
-                            <button class="editar" *ngIf="isLogged" type="button" routerLink="/edithys/{{skill.id}}">
-                                <i class="fa-solid fa-pencil"></i></button>
-                            <button class="borrar"*ngIf="isLogged" type="button" (click)="delete(skill.id)">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </div>
+                    <div class="contenedor-botones">
+                        <button class="editar" *ngIf="isLogged" type="button" routerLink="/editskill/{{skill.id}}">
+                            <i class="fa-solid fa-pencil"></i></button>
+                        <button class="borrar"*ngIf="isLogged" type="button" (click)="delete(skill.id)">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
                     </div>
                 </div>
-
-        </div>
+            </div>     
     </div> 
-       
-       
 </section >

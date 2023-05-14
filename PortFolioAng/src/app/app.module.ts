@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 
 import { InicioComponent } from './componentes/inicio/inicio.component';
-import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { CurriculumComponent } from './componentes/curriculum/curriculum.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
@@ -21,8 +20,11 @@ import { EditExperienciaComponent } from './componentes/curriculum/edit-experien
 import { NeweducacionComponent } from './componentes/curriculum/neweducacion.component';
 import { EditeducacionComponent } from './componentes/curriculum/editeducacion.component';
 import { EditSkillComponent } from './componentes/skills/edit-skill.component';
-import { NewtSkillComponent } from './componentes/skills/newt-skill.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { NewtSkillComponent } from './componentes/skills/newt-skill.component';
+import { EditAcercaDeComponent } from './componentes/inicio/edit-acerca-de.component';
+import { NewproyectoComponent } from './componentes/proyectos/newproyecto.component';
+
 
 
 
@@ -32,7 +34,6 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
   declarations: [
     AppComponent,  
     InicioComponent,
-    SobreMiComponent,
     CurriculumComponent,
     SkillsComponent,
     ProyectosComponent,
@@ -44,9 +45,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     EditeducacionComponent,
     EditSkillComponent,
     NewtSkillComponent,
-
-   
+    EditAcercaDeComponent,
+    NewproyectoComponent   
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
