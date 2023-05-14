@@ -7,7 +7,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'https://localhost:8080/hys/';
+  URL = 'https://backendeze-eui7.onrender.com/hys/';
 
   constructor(private httpClient: HttpClient) { }
 

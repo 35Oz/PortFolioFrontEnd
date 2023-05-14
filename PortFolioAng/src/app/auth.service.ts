@@ -7,7 +7,7 @@ import { Router, RouterLinkActive } from '@angular/router';
 })
 export class AuthService {
 
-  api = 'http://localhost:4200/api/';
+  api = 'https://backendeze-eui7.onrender.com/api/';
   token: any;
 
   constructor(private htpp: HttpClient,private router: Router) { }
